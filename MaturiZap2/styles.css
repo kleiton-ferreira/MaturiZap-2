@@ -1,0 +1,450 @@
+/*---------------------- Estilos------------------------- */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    min-width: 500px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #666;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+}
+
+nav a {
+    display: inline-block; /* Altera de float para inline-block */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Adicionando uma transição*/
+    padding: 14px 16px;
+  
+}
+
+nav a:hover {
+    background-color: #22b62e; /* Mudança de cor ao passar o mouse */
+
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/*-------------------------------------------Textos--------------------------------------------------*/
+.titulo {
+
+    float: left; /* Texto flutua para a esquerda */
+            width: 25%; /* Define a largura do texto */
+            height: 50%;
+            padding: 60px; /* Define as larguras das bordas do texto */
+            box-sizing: border-box; /* Inclui padding na largura */
+            text-align: center; /* Justifica o texto */  
+}
+
+
+.textInicio, .textConfigurar, .textChamadas, .textMensagens, .textTelaInicial, .textSugestoes, .textSobre, .textMedia {
+    float: left; /* Texto flutua para a esquerda */
+    width: 40%; /* Define a largura do texto */
+    height: 50%;
+    padding: 10px; /* Define as larguras das bordas do texto */
+    box-sizing: border-box; /* Inclui padding na largura */
+    text-align: justify; /* Justifica o texto */  
+    color-scheme: #333;
+    max-width: 550px; /* Defina a largura máxima desejada para o formulário */
+    margin: 0 auto; /* Centralizar o formulário na página */
+    float: center;
+}
+
+.textTelaInicial, .textMedia {
+
+    float: left; /* Texto flutua para a esquerda */
+    width: 40%; /* Define a largura do texto */
+    height: 50%;
+    padding: 10px; /* Define as larguras das bordas do texto */
+    box-sizing: border-box; /* Inclui padding na largura */
+    text-align: justify; /* Justifica o texto */  
+    color-scheme: #333;
+    max-width: 1000px; /* Defina a largura máxima desejada para o formulário */
+    margin: 0 auto; /* Centralizar o formulário na página */
+    float: center;
+
+}
+
+.verde{
+text-align: justify;
+
+}
+
+/*-------------------------------------------Imagens--------------------------------------------------*/
+.imageInicio, .imageConfig, .imageCham, .imageMens, .imageTelaIni, .imageMidia, .imageSobre, .imageSugestoes {
+    float: right; /* Imagem flutua para a direita */
+    width: 40%; /* Define a largura da imagem */
+    padding: 60px; /* Remove as bordas da imagem */
+    height: 35%; /* Define a altura da imagem */
+    object-position: right; /* Alinha a imagem à direita */
+    box-sizing: border-box; /* Inclui padding na largura */
+}
+
+
+
+/*-------------------Travando a cor na seleção da Navbar-----------------------*/
+
+#inicio-link, #tutoriais-link,#videos-link, #sugestoes-link, #sobre-link {
+    
+    background-color: #22b62e; /* Cor de fundo quando selecionado */
+    color: white; /* Cor do texto */
+    pointer-events: none; /* Desabilita cliques no link */
+}
+
+
+.verde{
+color: #22b62e;
+
+}
+
+/*--------------------------Flex Box para as páginas----------------------*/
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.textInicio, .textConfigurar, .textChamadas, .textMensagens, .textTelaInicial, .textSugestoes, .textSobre, .textTelaInicial {
+    flex: 1;
+    padding: 20px;
+}
+
+.content img {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+}
+
+
+
+/* -----------------------------Vídeos-------------------------------------*/
+
+/* Estilos para a tabela da página de vídeos */
+table.video-table {
+    margin-top: 20px; /* Espaço acima da tabela */
+    width: 60%; /* Largura da tabela */
+    margin-left: auto; /* Centraliza a tabela horizontalmente */
+    margin-right: auto; /* Centraliza a tabela horizontalmente */
+    border-collapse: collapse; /* Mescla as bordas das células */
+    justify-content: center;
+}
+
+table.video-table, table.video-table th, table.video-table td {
+    border: 1px solid #ddd; /* Borda de todas as células */
+}
+
+table.video-table th, table.video-table td {
+    padding: 10px; /* Espaçamento interno das células */
+    text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+table.video-table th {
+    background-color: #f2f2f2; /* Cor de fundo das células do cabeçalho */
+}
+
+/*-------------- Estilos para os botões de vídeo na página de vídeos ------------------*/
+.video-table .video-link {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #b81010; /* Cor de fundo vermelho para o botão */
+    color: #fff; /* Cor do texto */
+    text-decoration: none;
+    border-radius: 4px; /* Cantos arredondados */
+    margin-right: 8px; /* Margem à direita para separar os botões */
+}
+
+.video-table .video-link:hover {
+    background-color: #680000; /* Cor de fundo vermelho mais escura no hover */
+}
+
+/* Imagens da pág de vídeos */
+
+.imageAndroid {
+    
+    width: 2.5%; /* Define a largura da imagem */
+    height: 2.5%; /* Define a altura da imagem */
+    float: inline-end;
+    
+}
+
+.imageiOS {
+    
+    width: 2.5%; /* Define a largura da imagem */
+    height: 2.5%; /* Define a altura da imagem */
+    float: inline-end;
+    padding-bottom: 2%;
+    padding-top: 1%;
+   
+}
+
+
+
+/*----------------------Grid da Pág de Tutoriais---------------------------*/
+
+main.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.tutorial-container {
+    background-color: #fff;
+    padding: 20px;
+}
+
+.tutorial-container h3 {
+    color: #333;
+}
+
+.imageBaixando, .imageFunc {
+    width: 100px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+
+/*--------------------Estilo dos Botões da Pág de Tutoriais------------------------*/
+
+.tutorial-container .tutorial-link.button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #22b62e; /* Cor de fundo verde para o botão */
+    color: #fff; /* Cor do texto branco */
+    text-decoration: none;
+    border-radius: 4px; /* Cantos arredondados */
+    margin-right: 20px; /* Margem à direita para separar os botões */
+    
+}
+
+/* Estilo para o hover dos botões de tutoriais */
+.tutorial-link.button:hover {
+    background-color: #0f8a1c; /* Altere para o verde mais escuro desejado */
+}
+
+/* --------------------------Página de Sugestões------------------------- */
+
+/* Adiciona o estilo para ocultar a mensagem de confirmação inicialmente */
+#confirmacao {
+    display: none;
+}
+
+/* Estilo para ajustar o layout do formulário e da imagem */
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+textarea {
+    width: 100%;
+    height: 150px; /* Defina a altura desejada */
+    resize: vertical; /* Permitir que o usuário redimensione verticalmente */
+}
+
+input[type="text"],
+        textarea {
+            width: 100%;
+            text-align: justify; /* Justifica o texto dentro dos campos de texto */
+        }
+
+        .mensagem {
+            margin-top: 5px;
+            
+        }
+        
+        .confirmation-box {
+            background-color: #22b62e; /* cor verde de fundo */
+            border: 1px solid #113610; /* borda verde mais escura */
+            color: #113610; /* cor do texto */
+            padding: 10px; /* espaço interno */
+            width: 300px; /* largura da caixa */
+            margin: 20px center; /* posiciona à esquerda horizontalmente */
+            text-align: center; /* alinha texto ao centro */
+            border-radius: 5px; /* bordas arredondadas */
+        }
+        
+        .content {
+            overflow: hidden; /* Limpa o float */
+            display: flex; /* Usa flexbox para organizar os elementos */
+            justify-content: center; /* Centraliza os elementos horizontalmente */
+            align-items: center; /* Centraliza os elementos verticalmente */
+        
+        }
+
+
+    
+
+
+/*---------------Aplicando recuo nos parágrafos------------------*/
+.paragrafo-recuo {
+    text-indent: 1.25cm; /* Aplica um recuo no início de cada parágrafo que tem a classe 'paragrafo-recuo' */
+    
+}
+
+
+/*--------------------Flex box e responsividade--------------------------*/
+
+/* Estilos para a estrutura flexível */
+
+
+.inicio-page, .chamadas-page, .configurar-page, .inicio-page, .mensagens-page, .midia-page, 
+.sobre-page, .sugestoes-page, .telaInicial-page, .tutoriais-page, .videos-page {
+
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.header, .nav, .content, .footer {
+    width: 100%; /* Para ocupar toda a largura */
+    max-width: 100%; /* Para limitar a largura máxima */
+    margin: auto; /* Centralizar */
+}
+
+.content {
+    background-color: white;
+    display: flex;
+    flex-direction: row; /* Alinha os elementos em linha */
+    justify-content: space-between; /* Distribui os elementos uniformemente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+
+.imageInicio, .imageCham, .imageConfig, .imageMens, 
+.imageMidia, .imageSobre, .imageSugestoes, .imageTelaIni {
+    max-width: 20%; /* Largura máxima da imagem */
+    max-height: auto;
+}
+
+.navBar, .textInicio, .textChamadas, .textConfigurar, .textMensagens, .textMedia,
+.textSobre, .textSugestoes, .textTelaInicial, .textTutoriais, .textVideos {
+
+    font-size: 20px; /* Tamanho de fonte aumentado */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Estilos para Responsividade */
+
+@media (max-width: 795px) {
+    .content {
+        flex-direction: column; /* Mude para empilhamento em dispositivos menores */
+        align-items: flex-start; /* Alinhe itens à esquerda */
+    }
+
+    .imageInicio, .imageCham, .imageConfig, .imageMens, 
+    .imageMidia, .imageSobre, .imageSugestoes, .imageTelaIni {
+        max-width: 100%; /* Defina a largura máxima da imagem */
+    }
+}
+
+@media (max-width: 795px) {
+
+    .navBar, .textInicio, .textChamadas, .textConfigurar, .textMensagens, .textMedia,
+    .textSobre, .textSugestoes, .textTelaInicial, .textTutoriais, .textVideos {
+        font-size: 80%;
+        text-align: justify;
+         
+    }
+}
+
+/*------------------Responsividade e customização dos botões de áudio----------------------*/
+.audio-container audio::-webkit-media-controls-play-button,
+.audio-container audio::-webkit-media-controls-pause-button {
+    background-color: #22b62e; /* Cor de fundo do botão */
+    border-radius: 50%; /* Para tornar o botão redondo */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+}
+
+
+/* Estilizando o botão de áudio no hover */
+.audio-container audio::-webkit-media-controls-play-button:hover,
+.audio-container audio::-webkit-media-controls-pause-button:hover {
+    background-color: #0a6e22; /* Cor de fundo mais escura no hover */
+}
+
+
+/* Estilizando o controle de áudio */
+.audio-container audio::-webkit-media-controls-panel {
+    background-color: #35c03028; /* Cor de fundo do controle de áudio */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+}
+
+
+.audio-container {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-bottom: 10%; 
+    position: relative;
+}
+
+.audio-container audio {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+/* Responsividade e estilizaçõ áudio de tutoriais */
+
+.audio-tuto audio::-webkit-media-controls-play-button,
+.audio-tuto audio::-webkit-media-controls-pause-button {
+    background-color: #22b62e; /* Cor de fundo do botão */
+    border-radius: 50%; /* Para tornar o botão redondo */
+    width: 30px; /* Largura do botão */
+    height: 30px; /* Altura do botão */
+}
+
+
+/* Estilizando o botão de áudio no hover */
+.audio-tuto audio::-webkit-media-controls-play-button:hover,
+.audio-tuto audio::-webkit-media-controls-pause-button:hover {
+    background-color: #0a6e22; /* Cor de fundo mais escura no hover */
+}
+
+
+/* Estilizando o controle de áudio */
+.audio-tuto audio::-webkit-media-controls-panel {
+    background-color: #35c03028; /* Cor de fundo do controle de áudio */
+    border-radius: 5px; /* Borda arredondada */
+    padding: 5px; /* Espaçamento interno */
+}
+

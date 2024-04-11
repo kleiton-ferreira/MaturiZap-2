@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestões - MaturiZap</title>
+    <link rel="icon" href="Imagens/MaturiZap.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="sugestoes-page">
+
+    <header>
+        <img src="Imagens/MaturiZap.png" alt="Logomarca" width="150" height="150">
+        <p>Conectando gerações experientes</p>
+    </header>
+
+    <nav class="navBar">
+        <a href="inicio.html">Tela Inicial</a>
+        <a href="tutoriais.html">Tutoriais</a>
+        <a href="videos.html">Vídeos</a>
+        <a href="sugestoes.html" id="sugestoes-link">Sugestões</a>
+        <a href="sobre.html">Sobre nós</a>
+    </nav>
+
+    <div class="content">
+        <div class="textSugestoes">
+            <form action="cadastra.php" method="post" id="formulario">
+                <h2>Dúvidas ou Sugestões</h2>
+                Nome: <input type="text" name="nome"/><br/>
+                Idade: <input type="text" name="idade"/><br/> 
+                E-mail: <input type="text" name="email"/> <br>
+                <input type="radio" name="Sexo" value="M" /> Sexo Masculino <br>
+                <input type="radio" name="Sexo" value="F" /> Sexo Feminino <br><br>
+                
+                Sugestão/Dúvida: <br>
+                <textarea name="sugestao"></textarea><br/>
+
+                <input type="submit" value="Enviar" />
+                <p></p>
+            </form> 
+            <!-- Mensagem de confirmação -->
+            <div class="confirmation-box" id="confirmacao">Mensagem enviada com sucesso!</div>
+        </div> 
+        <img src="Imagens/imagem3.jpg" alt="WhatsApp no SmartPhone" class="imageSugestoes">
+    </div>
+    
+
+    <footer>
+        <p><b>Autores: </b>Jonathan Góis / João Vitor / Kleiton Ferreira <br>
+        CESED - Centro de Ensino Superior e Desenvolvimento Ltda. <br>
+        &copy; 2024 Todos os direitos reservados <br>
+        CNPJ: 02.108.023/0001-40</p>
+    </footer>
+
+    <!-- Script JavaScript para exibir a mensagem de confirmação -->
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            document.getElementById("confirmacao").style.display = "block"; // Exibe a mensagem de confirmação
+        });
+    </script>
+</body>
+</html>
+
